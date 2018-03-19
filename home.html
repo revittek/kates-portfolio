@@ -40,10 +40,11 @@
 .portrait {
   width: 100px;
   height: 144px;
-  margin-right: 14px; 
+  margin-right: 20px; 
   margin-bottom: 20px;
   border: 5px solid #e8628b;
-  border-radius: 15px;
+  border-radius: 14px;
+  box-shadow: 2px 2px #e00000;
 }
 
 .head {
@@ -59,7 +60,6 @@ h1 {
   flex-basis: 280px;
   color: #e8628b;
   margin: 0;
-  padding-left: 50px;
   cursor: default;
 }
 
@@ -78,8 +78,15 @@ h4 {
 }
 
 .main {
+  display: flex;
+  flex-direction: row;
   font-family: Spectral;
   padding-left: 50px;
+}
+
+.left {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 p {
@@ -103,7 +110,6 @@ a {
   cursor: pointer;
   padding: 2px;
   border-radius: 3px;
-  text-decoration: none;
 }
 
 h3 {
@@ -134,7 +140,7 @@ a:hover {
     font-size: 22px;
   }
   .portrait {
-    display: none;
+    display: block;
   }
   nav {
     flex-basis: 60px;
@@ -153,8 +159,19 @@ a:hover {
   }
   h1, h2 {
     flex-basis: 10px;
+    padding: 0;
+    margin: 0;
   }
   .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portrait {
+    display: block;
+    height: 288px;
+    width: 200px;
+  }
+  .main {
     flex-direction: column;
     align-items: center;
   }
@@ -187,11 +204,10 @@ a:hover {
 </head>
 
 <body>
-
 <div class="head">
     <h1>Kate Revitte</h1>
     <h2>Web Technologist</h2>
-  <div class="image"><img class="portrait" src="http://www.krevitte.com/photos/portrait.jpg" /></div>
+  <div class="image"></div>
 </div>
 <div class="content">
   
@@ -199,14 +215,17 @@ a:hover {
 
   <div class="menu">
     <a id="about">About me</a>
-    <a href="/work/travel/index.html" target="_blank">Sample</a>
-    <a href="/cv/Kate_Revitte_Ux.pdf" target="_blank">CV</a>
-    <a href="http://linkedin.com/in/krevitte" target="_blank">Contact</a>
+    <a>Portfolio</a>
+    <a>CV</a>
+    <a>Contact</a>
   </div>
 </nav>
 <div class="main">
+  <div class="left">
+    <div class="top">
   <p>
   Thank you for taking the time to learn more about me and my work. I have been creating web experiences for 20 years, and have learned first hand the lessons of maintainability and scalability of web technologies. It is my hope that I can share some of my experience with you, and by working together, to help your team and your vision grow and blossom. I especially like to work with small businesses with big aspirations.</p>
+    </div>
   <p><h3>Core Skills</h3><ul>
 <li>Conducting research, collecting information, and preparing recommendations.
   </li><li>Evaluating systems and workflows, creating and running tests, conforming to
@@ -220,9 +239,9 @@ requirements and goals.
 support.
   </li><li>Training and instructing, creating instructional materials, documentation, and
   communications.</ul>
-</div>
-  
-</div>
+      </div>
+  <img class="portrait" src="http://www.krevitte.com/photos/portrait.jpg" />
+  </div></div>
 <div class="container">
   <div class="box">
     <h4>I help companies scale their tech capacity as they win more business.</h4>
