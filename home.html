@@ -1,261 +1,106 @@
 <html>
-<head>
-<title>Kate Revitte - web technologist</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<style type="text/css">
-@import url('https://fonts.googleapis.com/css?family=Roboto|Spectral|Alegreya+Sans+SC:100');
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kate Revitte - web technologist</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
 
-.content {
-  display: flex;
-  flex-direction: row;
-}
-
-#about {
-  background: #ffb58d;
-}
-
-.portrait {
-  width: 200px;
-  height: 288px;
-  margin-right: 20px; 
-  margin-bottom: 20px;
-  border: 5px solid #e8628b;
-  border-radius: 14px;
-}
-
-.head {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  /* background: #002a00;*/
-}
-
-h1 {
-  font-family: Alegreya Sans SC;
-  font-size: 52px;
-  flex-basis: 280px;
-  color: #e8628b;
-  margin: 0;
-  cursor: default;
-}
-
-h2 {
-  font-family: Alegreya Sans SC;
-  font-size: 52px;
-  flex-basis: 400px;
-  color: #e8628b;
-  margin: 0;
-  padding-left: 50px;
-  cursor: default;
-}
-
-h4 {
-  font-size: 30px;
-}
-
-.main {
-  display: flex;
-  flex-direction: row;
-  font-family: Spectral;
-  padding-left: 50px;
-}
-
-.left {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  flex-basis: 320px;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-
-a {
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 26px;
-  color: #117613;
-  cursor: pointer;
-  padding: 2px;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-h3 {
-  font-size: 18px;
-  font-family: Roboto;
-}
-
-li {
-  font-size: 14px;
-  font-family: Spectral;
-  list-style-type: circle;
-}
-
-a:hover {
-  background: #e8628b; /*#db1c56;*/
-  color: white;
-}
-
-@media screen and (max-width:1250px) {
-  .content {
-    flex-direction: column;
-  }
-  .menu {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  a {
-    font-size: 22px;
-  }
-  .portrait {
-    display: block;
-  }
-  nav {
-    flex-basis: 60px;
-  }
-}
-
-@media screen and (max-width:730px) {
-  h1, h2 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (max-width:495px) {
-  .head {
-    flex-direction: column;
-  }
-  h1, h2 {
-    flex-basis: 10px;
-    padding: 0;
-    margin: 0;
-  }
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
-  .portrait {
-    display: block;
-    height: 288px;
-    width: 200px;
-    margin: 0 0 20px 0px;
-    padding: 0;
-  }
-  .main {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  background: #78083d;
-  flex: 1 1 200px;
-  padding: 20px;
-}
-
-h4 {
-  color: white;
-  font-family: Roboto;
-  font-weight: lighter;
-  font-size: 26px;
-}
-
-.middle {
-  background: #c45489;
-}
-
-.box:hover {
-  background: #ab3b70;
-  transition: 0.3s background ease-in;
-}
-
-
-
-</style>
-</head>
-
-<body>
-<div class="head">
-    <h1>Kate Revitte</h1>
-    <h2>Web Technologist</h2>
-  
-</div>
-<div class="content">
-  
-  <nav>
-
-  <div class="menu">
-    <a id="about">About me</a>
-    <a href="/work/travel/index.html" target="_blank">Sample</a>
-    <a href="/cv/Kate_Revitte_Ux.pdf" target="_blank">CV</a>
-    <a href="http://linkedin.com/in/krevitte" target="_blank">Contact</a>
-  </div>
-</nav>
-<div class="main">
-  <div class="left">
-    <div class="top">
-  <p>
-  Thank you for taking the time to learn more about me and my work. I have been creating web experiences for 20 years, and have learned first hand the lessons of maintainability and scalability of web technologies. It is my hope that I can share some of my experience with you, and by working together, to help your team and your vision grow and blossom. I especially like to work with small businesses with big aspirations.</p>
+  <body>
+    <div class="head">
+        <h1>Kate Revitte</h1>
+        <h2>Web Technologist</h2>
     </div>
-  <p><h3>Core Skills</h3><ul>
-<li>Conducting research, collecting information, and preparing recommendations.
-  </li><li>Evaluating systems and workflows, creating and running tests, conforming to
-quality assurance standards, and analyzing data, user needs, and costs.
-  </li><li>Strategic planning including improving and implementing processes,
-establishing priorities, developing solutions to complex problems, and defining
-requirements and goals.
-  </li><li>Developing standards, automating systems and processes.
-  </li><li>Creating, analyzing, and designing systems and procedures.
-  </li><li>Monitoring systems, problem solving, troubleshooting, and providing technical
-support.
-  </li><li>Training and instructing, creating instructional materials, documentation, and
-  communications.</ul>
+    <div class="content">
+      <nav>
+        <div class="menu">
+          <a id="about">About me</a>
+          <a href="#sample">Sample</a>
+          <a href="/cv/Kate_Revitte_Ux.pdf" target="_blank">CV</a>
+          <a href="http://linkedin.com/in/krevitte" target="_blank">Contact</a>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="left">
+          <div class="top">
+            <p>
+            Thank you for taking the time to learn more about me and my work. I have been creating web experiences for 20 years, and have learned first hand the lessons of maintainability and scalability of web technologies. It is my hope that I can share some of my experience with you, and by working together, to help your team and your vision grow and blossom. I especially like to work with small businesses with big aspirations.</p>
+          </div>
+          <div class="core">
+            <h3>Core Skills</h3>
+              <ul>
+                <li>Conducting research, collecting information, and preparing recommendations.
+                </li>
+                <li>Evaluating systems and workflows, creating and running tests, conforming to quality assurance standards, and analyzing data, user needs, and costs.
+                </li>
+                <li>Strategic planning including improving and implementing processes,
+          establishing priorities, developing solutions to complex problems, and defining
+          requirements and goals.
+                </li>
+                <li>Developing standards, automating systems and processes.
+                </li>
+                <li>Creating, analyzing, and designing systems and procedures.
+                </li>
+                <li>Monitoring systems, problem solving, troubleshooting, and providing technical support.
+                </li>
+                <li>Training and instructing, creating instructional materials, documentation, and communications.</li>
+              </ul></p>
+          </div>
+        </div>
+          <div class="image">
+            <img class="portrait" src="http://www.krevitte.com/photos/portrait.jpg" />
+          </div>
+        </div>
       </div>
-  <div class="image"><img class="portrait" src="http://www.krevitte.com/photos/portrait.jpg" /></div>
-  </div></div>
-<div class="container">
-  <div class="box">
-    <h4>I help companies scale their tech capacity as they win more business.</h4>
-  </div>
-  <div class="box middle">
-    <h4>I research and implement the processes, tools, and testing improvements that drive value for teams.</h4>   </div>
-  <div class="box">
-    <h4>I use data and engineering principles to improve your bottom line.</h4>
-  </div>
-</div>
+    <div class="container">
+      <div class="box">
+        <h4>I help companies scale their tech capacity as they win more business.</h4>
+      </div>
+      <div class="box middle">
+        <h4>I research and implement the processes, tools, and testing improvements that drive value for teams.</h4>   </div>
+      <div class="box">
+        <h4>I use data and engineering principles to improve your bottom line.</h4>
+      </div>
+    </div>
+
+    <div class="work" id="sample">
+      <h2>Sample Work</h2>
+      <p>Take a look at some samples of my web design and development and Ux design work. If you don't see the type of sample you're most interested in, please contact me and ask. I may have one.</p>
+      <div class="work-container">
+      <div class="sample-work">
+        <h3><a href="work/travel/index.html" target="_blank">
+        <i class="fa fa-suitcase fa-4x"></i>
+        Travel Deutschland</h3></a>
+        <p>I created and styled an example travel site from a well known modern responsive format. The user experience is from a template, but I hand coded the CSS to show how I execute a powerful marketing tool.</p>
+      </div>
+      <div class="sample-work">
+        <h3><a href="work/dream-machine/index.html" target="_blank"><i class="fa fa-flask fa-4x"></i>
+        Dream Machine</h3></a>
+        <p>A dream machine is a substropic flicker device that produces visual stimuli. Flickering at around 8Hz, accompanied by white noise, can produce some interesting effects. I designed and created this standalone application to investigate these effects. Warning: do not use if epileptic.</p>
+      </div>
+    </div>
+    </div>
+        <footer>
+          <p>Thanks!</p>
+          <p><a href="http://linkedin.com/in/krevitte" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></p>
+    </footer>
 </body></html>
