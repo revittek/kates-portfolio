@@ -22,7 +22,7 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css?family=Roboto:300|Spectral|Alegreya+Sans+SC:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Spectral|Alegreya+Sans+SC:100');
 
 .content {
   display: flex;
@@ -33,18 +33,13 @@
   background: #ffb58d;
 }
 
-.image {
-  order: -2;
-}
-
 .portrait {
-  width: 100px;
-  height: 144px;
+  width: 200px;
+  height: 288px;
   margin-right: 20px; 
   margin-bottom: 20px;
   border: 5px solid #e8628b;
   border-radius: 14px;
-  box-shadow: 2px 2px #e00000;
 }
 
 .head {
@@ -95,7 +90,7 @@ p {
 }
 
 nav {
-  flex-basis: 300px;
+  flex-basis: 320px;
 }
 
 .menu {
@@ -105,11 +100,13 @@ nav {
 
 a {
   font-family: Roboto;
+  font-weight: normal;
   font-size: 26px;
   color: #117613;
   cursor: pointer;
   padding: 2px;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 h3 {
@@ -188,9 +185,14 @@ a:hover {
 .box {
   background: #78083d;
   flex: 1 1 200px;
+  padding: 20px;
+}
+
+h4 {
   color: white;
   font-family: Roboto;
-  padding: 20px;
+  font-weight: lighter;
+  font-size: 26px;
 }
 
 .middle {
@@ -219,9 +221,9 @@ a:hover {
 
   <div class="menu">
     <a id="about">About me</a>
-    <a>Portfolio</a>
-    <a>CV</a>
-    <a>Contact</a>
+    <a href="/work/travel/index.html" target="_blank">Sample</a>
+    <a href="/cv/Kate_Revitte_Ux.pdf" target="_blank">CV</a>
+    <a href="http://linkedin.com/in/krevitte" target="_blank">Contact</a>
   </div>
 </nav>
 <div class="main">
@@ -244,7 +246,7 @@ support.
   </li><li>Training and instructing, creating instructional materials, documentation, and
   communications.</ul>
       </div>
-  <img class="portrait" src="http://www.krevitte.com/photos/portrait.jpg" />
+  <div class="image"><img class="portrait" src="http://www.krevitte.com/photos/portrait.jpg" /></div>
   </div></div>
 <div class="container">
   <div class="box">
