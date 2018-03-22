@@ -64,9 +64,6 @@ p {
 }
 
 nav {
-/*  flex-basis: 320px;
-  flex-shrink: 1;
-  flex-grow: 1;*/
   min-width: 122px;
 }
 
@@ -172,6 +169,7 @@ h4 {
 
 .sample-work i {
   margin: 10px;
+  color: #8c9eff;
 }
 
 .sample-work p {
